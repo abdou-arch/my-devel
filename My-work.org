@@ -1,0 +1,39 @@
+#+TITLE: My work organization
+
+
+* TODO Check the stock for capacitors of the ABB compensation
+DEADLINE: <2025-04-30 Wed> SCHEDULED: <2025-04-28 Mon>
+:PROPERTIES:
+:task-id: 1
+:END:
+* TODO Make a procedure for testing capacitors in stock
+DEADLINE: <2025-05-03 Sat> SCHEDULED: <2025-04-28 Mon>
+:PROPERTIES:
+:task-id: 2
+:END:
+* DONE Study the possibility to install temperature sensors in compensation panels and communicate to related plc
+DEADLINE: <2025-05-05 Mon> SCHEDULED: <2025-04-28 Mon>
+:PROPERTIES:
+:task-id: 3
+:END:
+
+#+BEGIN_EXAMPLE
+4.7
+Thermal cutoff switch
+Each APCQ capacitor bank cubicle includes a temperature-sensitive switch that trips the
+controller power supply (hence RVC/RVT controller will be off) in case of over
+temperature above 60°C (or 140°F) inside the enclosure. In such event, all the capacitors
+are switched off while fans keep running. Thermal cutoff switch automatically closes
+when temperature goes down to normal conditions.
+DANGER
+When the thermal protection switches on, RVC/RVT controller is off but the
+capacitor bank is still connected to the power supplies. See safety instructions and
+wait 5 minutes before the opening.
+#+END_EXAMPLE
+
+* DONE integrate capcitance measurement in PMP with its frequencies
+DEADLINE: <2025-05-05 Mon> SCHEDULED: <2025-04-28 Mon>
+:PROPERTIES:
+:task-id: 4
+:END:
+
